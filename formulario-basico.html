@@ -1,89 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Pedido pizza</title>
- 
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    //Título de la página
+    <title>Pizzeria Tomodachi</title>
+  </head>
+  <body>
+    //Formulario de pedido de pizza básico con varios tipos de campos
     <h1>Pedido de pizza</h1>
 
     <form action="/procesar-pedido" method="post">
-        
-        <fieldset>
-            <legend>La pizza</legend>
+      <fieldset>
+        <legend>La pizza</legend>
 
-            <div class="form-group">
-                <p>Ingredientes</p>
-                <input type="checkbox" id="queso" name="ingredientes" value="queso">
-                <label for="queso">Queso</label><br>
-                
-                <input type="checkbox" id="pimiento" name="ingredientes" value="pimiento">
-                <label for="pimiento">Pimiento</label><br>
-                
-                <input type="checkbox" id="cebolla" name="ingredientes" value="cebolla">
-                <label for="cebolla">Cebolla</label>
-            </div>
+        <div class="form-group">
+          <p>Ingredientes</p>
+          <input type="checkbox" id="queso" name="ingredientes" value="queso" />
+          <label for="queso">Queso</label><br />
 
-            <div class="form-group">
-                <p>Tamaño</p>
-                <input type="radio" id="pequena" name="tamano" value="pequena" checked>
-                <label for="pequena">Pequeña</label><br>
-                
-                <input type="radio" id="mediana" name="tamano" value="mediana">
-                <label for="mediana">Mediana</label><br>
-                
-                <input type="radio" id="grande" name="tamano" value="grande">
-                <label for="grande">Grande</label>
-            </div>
-        </fieldset>
+          <input
+            type="checkbox"
+            id="pimiento"
+            name="ingredientes"
+            value="pimiento"
+          />
+          <label for="pimiento">Pimiento</label><br />
 
-        <fieldset>
-            <legend>Datos de entrega</legend>
+          <input
+            type="checkbox"
+            id="cebolla"
+            name="ingredientes"
+            value="cebolla"
+          />
+          <label for="cebolla">Cebolla</label>
+        </div>
 
-            <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="direccion">Dirección</label>
-                <input type="text" id="direccion" name="direccion" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="telefono">Teléfono</label>
-                <input type="text" id="telefono" name="telefono">
-            </div>
-            
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email">
-            </div>
+        <div class="form-group">
+          <p>Tamaño</p>
+          <input
+            type="radio"
+            id="pequena"
+            name="tamano"
+            value="pequena"
+            checked
+          />
+          <label for="pequena">Pequeña</label><br />
 
-            <div class="form-group">
-                <p>Instrucciones especiales</p>
-                <textarea id="instrucciones" name="instrucciones"></textarea>
-            </div>
-        </fieldset>
-        
-        <fieldset>
-            <legend>Método de pago</legend>
+          <input type="radio" id="mediana" name="tamano" value="mediana" />
+          <label for="mediana">Mediana</label><br />
 
-            <div class="form-group">
-                <label for="pago">Efectivo</label>
-                <select id="pago" name="metodo_pago">
-                    <option value="efectivo" selected>Efectivo</option>
-                    <option value="tarjeta">Tarjeta de crédito/débito</option>
-                    <option value="paypal">PayPal</option>
-                </select>
-            </div>
-        </fieldset>
+          <input type="radio" id="grande" name="tamano" value="grande" />
+          <label for="grande">Grande</label>
+        </div>
+      </fieldset>
+      //Datos de entrega con varios tipos de campos
+      <fieldset>
+        <legend>Datos de entrega</legend>
 
-        <button type="submit">Ok</button>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
 
+        <div class="form-group">
+          <label for="direccion">Dirección</label>
+          <input type="text" id="direccion" name="direccion" required />
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="text" id="telefono" name="telefono" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div class="form-group">
+          <p>Instrucciones especiales</p>
+          <textarea id="instrucciones" name="instrucciones"></textarea>
+        </div>
+      </fieldset>
+      //Método de pago con un campo de selección
+      <fieldset>
+        <legend>Método de pago</legend>
+
+        <div class="form-group">
+          <label for="pago">Efectivo</label>
+          <select id="pago" name="metodo_pago">
+            <option value="efectivo" selected>Efectivo</option>
+            <option value="tarjeta">Tarjeta de crédito/débito</option>
+            <option value="paypal">PayPal</option>
+            <option value="bitcoin">Bitcoin</option>
+            //referencia xdxd
+          </select>
+        </div>
+      </fieldset>
+
+      <button type="submit">Ok</button>
     </form>
-
-</body>
+  </body>
 </html>
+//bankai zanka no tachi OP!
